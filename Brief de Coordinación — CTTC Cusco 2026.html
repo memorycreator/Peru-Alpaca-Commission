@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)file:///Users/jinwjeong/Downloads/brief_coordinator_es_4.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brief de Coordinación — CTTC Cusco 2026</title>
+<link href="./Brief de Coordinación — CTTC Cusco 2026_files/css2" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  :root{--ink:#1a1814;--mid:#4a4640;--light:#8a857e;--rule:#d4cfc8;--page:#faf8f5;--indigo:#2a3060;--gold:#b89040;}
+  
+  /* ── PRINT: color accuracy + page flow ─────────────────────────────── */
+  @media print {
+    /* 1. Force background colors, gradients, and swatches to print */
+    * {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    body { background: white; }
+    .page { box-shadow: none; margin: 0; max-width: 100%; padding: 32px 48px; }
+    .no-print { display: none; }
+
+    /* 2. Page break control — prevent splitting mid-element */
+    h2, h3 { page-break-after: avoid; }
+    h2 { page-break-before: auto; }
+    p, li { orphans: 3; widows: 3; }
+
+    /* Keep heading glued to its following content */
+    h2 + p, h2 + table, h2 + div,
+    h3 + p, h3 + table, h3 + div { page-break-before: avoid; }
+
+    /* Tables: keep rows together; avoid splitting a table that fits on a page */
+    table { page-break-inside: auto; border-collapse: collapse; width: 100%; }
+    tr { page-break-inside: avoid; page-break-after: auto; }
+    thead { display: table-header-group; }
+
+    /* Color schemas: avoid splitting the entire schema block */
+    .schema, [style*="<!-- PONCHO"], [style*="<!-- CHULLO"], [style*="<!-- MUFFLER"] {
+      page-break-inside: avoid;
+    }
+
+    /* Schema divs identified by their border pattern */
+    div[style*="margin:24px 0; border:0.5px solid #d4cfc8"] {
+      page-break-inside: avoid;
+    }
+
+    /* Piece banners start on new page (except the first) */
+    .piece-head { page-break-before: always; }
+    .piece-head:first-of-type { page-break-before: avoid; }
+
+    /* Section titles start on new page */
+    h2.section-title { page-break-before: always; }
+    h2.section-title:first-of-type { page-break-before: avoid; }
+
+    /* Keep voice/freedom boxes together */
+    .voice, .freedom, .spec-block, .risk-box { page-break-inside: avoid; }
+
+    /* Keep quadrant grid together where possible */
+    div[style*="display:grid; grid-template-columns:1fr 1fr; gap:0; border-bottom"] {
+      page-break-inside: avoid;
+    }
+
+    /* Keep individual schema quadrant cells together */
+    div[style*="padding:12px; border-right:4px solid"],
+    div[style*="padding:12px;"][style*="background:#"] {
+      page-break-inside: avoid;
+    }
+
+    /* Avoid page break after schema title bars */
+    div[style*="background:#ffffff; color:#1a1814; padding:8px 14px"] {
+      page-break-after: avoid;
+    }
+
+    /* Timeline items */
+    .tl { page-break-inside: avoid; }
+
+    /* Don't break the four-flap chullo grid */
+    div[style*="grid-template-columns:1fr 1fr 1fr 1fr"] { page-break-inside: avoid; }
+  }
+
+  body{font-family:'Jost',sans-serif;background:#e8e4dc;color:var(--ink);line-height:1.7;font-size:14px;font-weight:300;}
+  .page{background:var(--page);max-width:820px;margin:40px auto;padding:64px 72px;box-shadow:0 8px 48px rgba(0,0,0,0.12);}
+  h1{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:36px;line-height:1.2;margin-bottom:6px;}
+  h2{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:20px;margin-top:44px;margin-bottom:16px;padding-bottom:8px;border-bottom:0.5px solid var(--rule);}
+  h3{font-family:'Jost',sans-serif;font-weight:500;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:var(--indigo);margin-top:24px;margin-bottom:10px;}
+  p{color:var(--mid);font-size:13px;line-height:1.75;margin-bottom:10px;}
+  .eyebrow{font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--light);margin-bottom:16px;}
+  .subtitle{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;color:var(--mid);}
+  .meta{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;margin-top:24px;padding-top:20px;border-top:0.5px solid var(--rule);}
+  .meta-label{font-size:8px;letter-spacing:0.15em;text-transform:uppercase;color:var(--light);margin-bottom:3px;}
+  .meta-value{font-size:12px;font-weight:400;}
+  table{width:100%;border-collapse:collapse;margin-top:12px;font-size:12px;}
+  th{text-align:left;font-weight:400;font-size:8px;letter-spacing:0.15em;text-transform:uppercase;color:var(--light);padding:7px 10px;border-bottom:0.5px solid var(--rule);}
+  td{padding:9px 10px;border-bottom:0.5px solid var(--rule);color:var(--mid);vertical-align:top;line-height:1.5;}
+  td:first-child{font-weight:400;color:var(--ink);}
+  tr:last-child td{border-bottom:none;}
+  .box{border:0.5px solid var(--indigo);background:rgba(42,48,96,0.04);padding:14px 18px;margin:16px 0;font-size:12px;color:var(--mid);line-height:1.7;}
+  .box strong{color:var(--ink);font-weight:500;}
+  .warn{border:0.5px solid var(--gold);background:rgba(184,144,64,0.05);padding:12px 16px;margin:12px 0;font-size:12px;color:var(--mid);line-height:1.65;}
+  .timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border:0.5px solid var(--rule);margin-top:12px;}
+  .tl{padding:12px;border-right:0.5px solid var(--rule);font-size:11px;color:var(--mid);}
+  .tl:last-child{border-right:none;}
+  .tl.now{background:rgba(42,48,96,0.05);}
+  .tl-month{font-size:8px;letter-spacing:0.13em;text-transform:uppercase;color:var(--indigo);margin-bottom:5px;}
+  ul{list-style:none;}
+  li{padding:4px 0;font-size:12.5px;color:var(--mid);padding-left:14px;position:relative;}
+  li::before{content:'—';position:absolute;left:0;color:var(--rule);}
+  strong{font-weight:500;color:var(--ink);}
+  .footer{margin-top:56px;padding-top:16px;border-top:0.5px solid var(--rule);display:flex;justify-content:space-between;align-items:center;}
+  .footer-note{font-size:9px;color:var(--light);}
+  .print-btn{font-family:'Jost',sans-serif;font-size:9px;letter-spacing:0.12em;text-transform:uppercase;padding:7px 14px;border:0.5px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;}
+  .print-btn:hover{background:var(--ink);color:var(--page);}
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="eyebrow">Brief de Coordinación — Para el Coordinador del CTTC Cusco o Institución Equivalente</div>
+<h1>Encargo Personalizado de Tres Piezas<br>en Alpaca — Cusco 2026</h1>
+<div class="subtitle">Poncho · Chullo · Bufanda — Recogida Septiembre / Octubre 2026</div>
+
+<div class="meta">
+  <div><div class="meta-label">Tipo de encargo</div><div class="meta-value">Encargo a medida — alpaca tejida a mano, tres piezas</div></div>
+  <div><div class="meta-label">Fecha de recogida</div><div class="meta-value">30 de septiembre – 13 de octubre, 2026</div></div>
+  <div><div class="meta-label">Precio</div><div class="meta-value">Se solicita cotización por pieza</div></div>
+</div>
+
+
+<h2>Espíritu del Encargo</h2>
+<p>Este encargo nace de un deseo de honrar la manera en que las comunidades andinas han entendido y representado el mundo natural durante siglos: el ciclo del día y la noche, las cuatro estaciones de las alturas, el cosmos tal y como se ve desde el Cusco. No se trata de un encargo decorativo, sino de un intento de llevar consigo una visión del mundo — la visión que sus comunidades han tejido en fibra durante generaciones.</p>
+<p>Los colores son los colores del cielo andino: el índigo profundo de la noche sobre el Ausangate, el azul polvo del mediodía, el oro del amanecer en las pampas, el verde-salvia del altiplano en verano. Los símbolos — Chakana, Cóndor, Mayu, Amaru — no son ornamentos, sino portadores de sabiduría: el conocimiento sobre cómo vivir bien, cómo dar y recibir (Ayni), cómo encontrar el centro (Chakana), cómo transformarse (Pachakuti).</p>
+<p>El comisionante se acerca a este trabajo como estudiante, no como cliente que impone. El brief que acompaña este encargo es una guía de intención — no una especificación rígida. El conocimiento del maestro tejedor sobre el mundo natural, las plantas tintóreas, y las formas simbólicas que su comunidad ha refinado durante generaciones es mayor que cualquier documento. Se confía en ese conocimiento para enriquecer y corregir todo lo que esté en el papel.</p>
+<h2>Su Rol en Este Encargo</h2>
+<p>Solicitamos al coordinador actuar como intermediario principal y garante de calidad para un encargo personalizado de tres piezas textiles en alpaca. Esto incluye: identificar y confirmar acceso a los maestros tejedores correctos, coordinar la producción entre tres comunidades, asegurar que la paleta de colores se comunique correctamente y se muestreen muestras antes de comenzar el tejido, gestionar la distribución del tinte de q'olle, y organizar la recogida consolidada en Chinchero en octubre de 2026.</p>
+<p>El comisionante busca el mejor trabajo que la comunidad pueda producir, no un producto turístico.</p>
+
+<h2>Asignación de Comunidades</h2>
+<table>
+  <tbody><tr><th>Pieza</th><th>Comunidad</th><th>Técnica requerida</th><th>Por qué esta comunidad</th></tr>
+  <tr><td>Poncho</td><td>Pitumarca — verificar nombre de asociación directamente con el CTTC</td><td>Ticlla (urdimbre discontinua) — imprescindible</td><td>Única comunidad globalmente que practica ticlla. Referencia: producto #87 en la tienda CTTC ($1,390). Solicitar al maestro que tejió esa pieza.</td></tr>
+  <tr><td>Chullo</td><td>Chinchero — Asociación "Awayriqcharicheq"</td><td>Tejido en alpaca bebé con paneles de orejeras en telar de cintura</td><td>Comunidad fundadora del CTTC; mejor infraestructura para encargos personalizados de extranjeros y recogida en persona.</td></tr>
+  <tr><td>Bufanda</td><td>Chahuaytire — Asociación "Inka Pallay"</td><td>Telar de cintura cara de urdimbre; textura espiga; orillo chichilla</td><td>La mejor graduación de color y calidad de tejido de la región. La técnica espiga es esencial para la integridad estructural.</td></tr>
+</tbody></table>
+
+<h2>Controles de Calidad Críticos</h2>
+<table>
+  <tbody><tr><th>Punto de control</th><th>Requisito</th></tr>
+  <tr><td>Grado de fibra</td><td>100% alpaca — sin mezcla de lana en ningún momento. Chullo y bufanda: mínimo alpaca bebé. Poncho: urdimbre huacaya, trama alpaca bebé donde sea posible. Si el tejedor propone una mezcla de fibras, esto debe comunicarse y aprobarse antes de comenzar la producción.</td></tr>
+  <tr><td>Solo tintes naturales</td><td>Todos los colores con tintes naturales tradicionales de plantas, minerales y cochinilla. Sin tintes sintéticos. El coordinador debe confirmar esto antes de aceptar el encargo de cada tejedor.</td></tr>
+  <tr><td>Lote de tinte de q'olle</td><td>Antes de comenzar el tejido: obtener q'olle (Buddleja coriacea) para el tono crema dorado pálido y distribuirlo a las tres comunidades en un solo lote de tinte. Especificar el baño más claro posible — debe leerse como crema dorado pálido, no amarillo intenso.</td></tr>
+  <tr><td>Nivel de maestro mayor</td><td>Cada pieza debe asignarse a un/a maestro/a tejedor/a mayor reconocido/a, no a un tejedor junior o aprendiz. Para el poncho especialmente — el ticlla a este nivel de complejidad requiere al practicante más senior disponible.</td></tr>
+  <tr><td>Nivel de contraste</td><td>Contraste bajo a medio en las tres piezas. La paleta debe sentirse armoniosa y refinada. Comunicar explícitamente a los tejedores: "contraste bajo a medio — colores suaves y elegantes, no muy fuertes."</td></tr>
+  <tr><td>Escala de motivos</td><td>Motivos figurativos pequeños y finos. Comunicar: "motivos pequeños y finos, no figuras grandes ni estilo turístico."</td></tr>
+  <tr><td>Registro no turístico</td><td>Comunicar al tejedor/a: "una pieza elegante, suave y equilibrada — no estilo turístico."</td></tr>
+</tbody></table>
+
+<h2>Paleta de Colores — Resumen para el Coordinador</h2>
+<div class="box">
+  <strong>Cara A (poncho, chullo cara noche):</strong> Fondos índigo profundo y azul-púrpura. Todos alcanzables con añil/índigo. Colores narrativos: plateado (alpaca gris natural sin teñir), periwinkle pálido, malva — todos alcanzables con combinaciones de cochinilla e índigo.<br><br>
+  <strong>Cara B (poncho, chullo cara día, fondo bufanda):</strong> Fondos azul polvo y periwinkle pálido. Alcanzables con baños de índigo ligeros. Colores narrativos: amarillo pálido de q'olle, rosa polvorienta, dorado solar — alcanzables con planta q'olle y cochinilla diluida.<br><br>
+  <strong>Restricción clave de paleta:</strong> Todos los colores deben tener una calidad pastel con toque blanco — esto es natural en la alpaca bajo tinte natural, lo cual es una ventaja, no una limitación. Evitar tonos saturados fuertes. La cochinilla debe producir rosa polvorienta y malva, no carmesí brillante.
+</div>
+
+<h2>Puntos de Control de Progreso — Obligatorios</h2>
+<table>
+  <tbody><tr><th>Punto de control</th><th>Cuándo</th><th>Qué enviar</th></tr>
+  <tr><td>Muestras de tinte</td><td>Antes de comenzar la producción (antes del 1 de junio, 2026)</td><td>Muestras de tinte físicas o fotografiadas con luz natural: el crema dorado pálido de q'olle, el fondo índigo, la rosa polvorienta (cochinilla), la malva (cochinilla + índigo). El comisionante aprueba antes de comenzar el tejido.</td></tr>
+  <tr><td>Foto del urdimbre del poncho</td><td>Cuando el urdimbre del poncho de Pitumarca esté completamente montado (aprox. julio 2026)</td><td>Foto del urdimbre montado con luz natural. Este es el único punto donde aún se puede ajustar el diseño de color antes de que el tejido quede fijo.</td></tr>
+  <tr><td>Fotos al 50% de avance</td><td>Las tres piezas al aproximadamente 50% de avance</td><td>Fotos de cada pieza en progreso, con luz natural.</td></tr>
+  <tr><td>Fotos de finalización</td><td>Cuando las tres piezas estén terminadas</td><td>Fotos de las tres piezas juntas con luz natural. El comisionante aprueba y transfiere el saldo restante.</td></tr>
+</tbody></table>
+
+<h2>Cronograma</h2>
+<div class="timeline">
+  <div class="tl now"><div class="tl-month">Abril 2026</div>Coordinador confirma maestros tejedores. Se obtiene lote de q'olle. Comisionante transfiere 40–50% de depósito.</div>
+  <div class="tl"><div class="tl-month">Mayo 2026</div>Videollamada con comisionante. Muestras de tinte revisadas y aprobadas. Comienza la producción.</div>
+  <div class="tl"><div class="tl-month">Jun–Jul</div>Producción. Foto del urdimbre del poncho enviada. Coordinador supervisa calidad.</div>
+  <div class="tl"><div class="tl-month">Ago–Sep</div>Finalización. Fotos de piezas terminadas. Saldo transferido. Tres piezas entregadas en Chinchero.</div>
+  <div class="tl"><div class="tl-month">Oct 1–2</div>Recogida del comisionante en Chinchero. Reunión con maestros tejedores. Piezas inspeccionadas y recogidas.</div>
+</div>
+
+<h2>Estructura de Pago</h2>
+<p>El comisionante pagará en dos tramos: un depósito transferido al confirmar los maestros tejedores y aprobar las muestras de tinte, y el saldo restante transferido al recibir las fotos de finalización. Método preferido: transferencia bancaria internacional. También se acepta efectivo en USD en la recogida.</p>
+<p>Por favor, envíe su mejor cotización para cada pieza al responder — el comisionante está comparando opciones de varias fuentes de tejido en la región del Cusco y confirmará según la calidad y el precio ofrecido.</p>
+
+<h2>Contactos Clave</h2>
+<ul>
+  <li><strong>Tienda Principal CTTC:</strong> Av. El Sol 603-A, Cusco (junto al Qoricancha). <a href="file:///cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d8b1b6beb798acbda0acb1b4bdabbbadabbbb7f6b7aabf">[email&nbsp;protected]</a> · textilescusco.org · Lun–Sáb 8:30–18:00</li>
+  <li><strong>Referencia Pitumarca:</strong> Producto CTTC #87 — solicitar al maestro específico que tejió esa pieza.</li>
+  <li><strong>Autoridad sobre maestros actuales:</strong> Nilda Callañaupa Álvarez, directora y fundadora del CTTC.</li>
+</ul>
+
+
+  <h2 style="font-family:&#39;Cormorant Garamond&#39;,serif;font-weight:400;font-size:20px;margin-top:44px;margin-bottom:16px;padding-bottom:8px;border-bottom:0.5px solid #d4cfc8;">Esquemas de Color — Las Tres Piezas</h2>
+  <p style="color:#4a4640;font-size:13px;margin-bottom:6px;">Los esquemas a continuación muestran la estructura exacta de colores para cada pieza. Cada muestra representa un tono de tinte natural real. Los códigos hex son valores de referencia — se confía en el juicio del tejedor sobre el tono exacto dentro de cada familia de colores.</p>
+
+  <!-- PONCHO COLOR SCHEMA -->
+  <div style="margin:24px 0; border:0.5px solid #d4cfc8; overflow:hidden; font-family:&#39;Jost&#39;,sans-serif; font-size:11px;">
+    <div style="background:#ffffff; color:#1a1814; padding:8px 14px; font-size:9px; letter-spacing:0.15em; text-transform:uppercase; font-weight:500; border-bottom:0.5px solid #d4cfc8;">Poncho — Color Schema · Face A · Night Sky · Urban Refined</div>
+
+    <div style="display:grid; grid-template-columns:2fr 1fr; gap:0; border-bottom:0.5px solid #d4cfc8;">
+      <div>
+        <div style="background:#ffffff; color:#1a1814; padding:5px 12px; font-size:8px; letter-spacing:0.13em; text-transform:uppercase; border-bottom:0.5px solid #d4cfc8;">Upper sky — 65% of total face</div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:0; border-bottom:0.5px solid #d4cfc8;">
+          <div style="background:linear-gradient(to top, #3a1060, #2a0a50, #0d1238); padding:12px; border-right:4px solid #C8A840;">
+            <div style="font-size:8px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(220,180,255,0.8); margin-bottom:4px;">Upper-left · Sunset</div>
+            <div style="font-size:14px; font-weight:500; color:#f0d8ff; margin-bottom:5px;">Last light</div>
+            <div style="font-size:10px; color:rgba(220,190,255,0.85); line-height:1.5; margin-bottom:8px;">Sky remembering warmth. Condor descending symmetrically.</div>
+                        <div style="font-size:8px; color:rgba(220,180,255,0.75); margin-bottom:4px; font-weight:500;">80% base — gradient bottom to top</div>
+            <div style="height:18px; margin-bottom:5px; margin-left:18px; border:0.5px solid rgba(255,255,255,0.15); background:linear-gradient(to right, #3a1060, #2a0a50, #0d1238); display:flex; align-items:center; justify-content:space-between; padding:0 6px;">
+              <span style="font-size:8px; color:rgba(240,210,255,0.95);">#3a1060 (mauve — horizon/bottom)</span>
+              <span style="font-size:8px; color:rgba(200,180,255,0.85);">#0d1238 (night — zenith/top)</span>
+            </div>
+                        <div style="font-size:8px; color:rgba(220,180,255,0.75); margin-bottom:4px; font-weight:500;">16% narrative</div>
+            <div style="display:flex; gap:5px; align-items:center; margin-bottom:4px; margin-left:18px;">
+              <div style="width:16px; height:16px; background:#C86868; border:0.5px solid rgba(255,255,255,0.2); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(220,180,255,0.8);">#C86868 (horizon glow — warm red)</span>
+            </div>
+            <div style="display:flex; gap:5px; align-items:center; margin-bottom:5px; margin-left:18px;">
+              <div style="width:16px; height:16px; background:#E8B840; border:0.5px solid rgba(255,255,255,0.2); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(220,180,255,0.8);">#E8B840 (horizon glow — golden amber)</span>
+            </div>
+                        <div style="font-size:8px; color:rgba(220,180,255,0.75); margin-bottom:4px; font-weight:500;">4% accent</div>
+            <div style="display:flex; gap:5px; align-items:center; margin-left:18px;">
+              <div style="width:16px; height:16px; background:#C8A840; border:0.5px solid rgba(255,255,255,0.2); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(220,180,255,0.8);">#C8A840 (ch'ukay seam — gold)</span>
+            </div>
+          </div>
+          <div style="background:#0d1238; padding:12px;">
+            <div style="font-size:8px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(180,170,255,0.8); margin-bottom:4px;">Upper-right · Night</div>
+            <div style="font-size:14px; font-weight:500; color:#d0c8ff; margin-bottom:5px;">Full night</div>
+            <div style="font-size:10px; color:rgba(200,195,255,0.85); line-height:1.5; margin-bottom:8px;">Pure midnight. Moon, Mayu, Chakana, stars in silver and pale blue.</div>
+                        <div style="font-size:8px; color:rgba(180,170,255,0.75); margin-bottom:4px; font-weight:500;">88% base</div>
+            <div style="display:flex; gap:5px; align-items:center; margin-bottom:5px; margin-left:18px;">
+              <div style="width:16px; height:16px; background:#0d1238; border:0.5px solid rgba(255,255,255,0.3); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(200,195,255,0.9);">#0d1238 (midnight indigo — dominant)</span>
+            </div>
+                        <div style="font-size:8px; color:rgba(180,170,255,0.75); margin-bottom:4px; font-weight:500;">12% narrative</div>
+            <div style="display:flex; gap:5px; align-items:center; margin-bottom:4px; margin-left:18px;">
+              <div style="width:16px; height:16px; background:#D8D8D8; border:0.5px solid rgba(255,255,255,0.2); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(180,170,255,0.85);">#D8D8D8 (moon — silver)</span>
+            </div>
+            <div style="display:flex; gap:5px; align-items:center; margin-bottom:4px; margin-left:18px;">
+              <div style="width:16px; height:16px; background:#E0E8FF; border:0.5px solid rgba(255,255,255,0.2); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(180,170,255,0.85);">#E0E8FF (stars — pale blue-white)</span>
+            </div>
+            <div style="display:flex; gap:5px; align-items:center; margin-left:18px;">
+              <div style="width:16px; height:16px; background:#C0B8D8; border:0.5px solid rgba(255,255,255,0.2); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(180,170,255,0.85);">#C0B8D8 (Mayu/Chakana — periwinkle)</span>
+            </div>
+          </div>
+        </div>
+        <div style="background:#ffffff; color:#1a1814; padding:3px 12px; font-size:8px; letter-spacing:0.1em; text-transform:uppercase; text-align:center; border-top:0.5px solid #d4cfc8; border-bottom:0.5px solid #d4cfc8;">↓ sky becomes earth — no hard line — gradient transitions (~5%)</div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:0;">
+          <div style="background:#101838; padding:12px; border-right:4px solid #C8A840;">
+            <div style="font-size:8px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(160,200,230,0.9); margin-bottom:4px;">Lower-left · Autumn</div>
+            <div style="font-size:14px; font-weight:500; color:#b8d8f0; margin-bottom:5px;">Water, snow, harvest</div>
+            <div style="font-size:10px; color:rgba(190,220,245,0.9); line-height:1.5; margin-bottom:6px;">Lake holds last warmth. Autumn grasses, russet, snow on peaks.</div>
+                        <div style="font-size:8px; color:rgba(180,210,240,0.8); margin-bottom:4px; font-weight:500;">84% base</div>
+            <div style="display:flex; gap:5px; align-items:center; margin-bottom:5px; margin-left:18px;">
+              <div style="width:16px; height:16px; background:#101838; border:0.5px solid rgba(255,255,255,0.3); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(180,210,240,0.9);">#101838 (lighter indigo — dominant)</span>
+            </div>
+                        <div style="font-size:8px; color:rgba(180,210,240,0.8); margin-bottom:4px; font-weight:500;">12% narrative</div>
+            <div style="display:flex; gap:5px; align-items:center; margin-bottom:4px; margin-left:18px;">
+              <div style="width:16px; height:16px; background:#8a6828; border:0.5px solid rgba(255,255,255,0.2); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(180,210,240,0.85);">#8a6828 (harvest grass — ochre)</span>
+            </div>
+            <div style="display:flex; gap:5px; align-items:center; margin-bottom:4px; margin-left:18px;">
+              <div style="width:16px; height:16px; background:#6a4820; border:0.5px solid rgba(255,255,255,0.2); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(180,210,240,0.85);">#6a4820 (harvest — russet)</span>
+            </div>
+            <div style="display:flex; gap:5px; align-items:center; margin-bottom:5px; margin-left:18px;">
+              <div style="width:16px; height:16px; background:#90b8c8; border:0.5px solid rgba(255,255,255,0.2); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(180,210,240,0.85);">#90b8c8 (lake — pale blue)</span>
+            </div>
+                        <div style="font-size:8px; color:rgba(180,210,240,0.8); margin-bottom:4px; font-weight:500;">4% accent</div>
+            <div style="display:flex; gap:5px; align-items:center; margin-left:18px;">
+              <div style="width:16px; height:16px; background:linear-gradient(to right,#101838,#283060); border:0.5px solid rgba(255,255,255,0.2); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(180,210,240,0.8);">#101838→#283060 (transition to sky above)</span>
+            </div>
+          </div>
+          <div style="background:#141c50; padding:12px;">
+            <div style="font-size:8px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(160,150,220,0.85); margin-bottom:4px;">Lower-right · Winter</div>
+            <div style="font-size:14px; font-weight:500; color:#b0a8e8; margin-bottom:5px;">Mountains, dark forest</div>
+            <div style="font-size:10px; color:rgba(180,175,230,0.85); line-height:1.5; margin-bottom:6px;">Snow on Ausangate in silver. Bare forest. Puma tracks. Amaru dormant.</div>
+                        <div style="font-size:8px; color:rgba(180,175,230,0.8); margin-bottom:4px; font-weight:500;">84% base</div>
+            <div style="display:flex; gap:5px; align-items:center; margin-bottom:5px; margin-left:18px;">
+              <div style="width:16px; height:16px; background:#141c50; border:0.5px solid rgba(255,255,255,0.3); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(180,175,230,0.9);">#141c50 (deep indigo — dominant)</span>
+            </div>
+                        <div style="font-size:8px; color:rgba(180,175,230,0.8); margin-bottom:4px; font-weight:500;">12% narrative</div>
+            <div style="display:flex; gap:5px; align-items:center; margin-bottom:4px; margin-left:18px;">
+              <div style="width:16px; height:16px; background:#D8D8D8; border:0.5px solid rgba(255,255,255,0.2); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(180,175,230,0.85);">#D8D8D8 (snow on Ausangate — silver)</span>
+            </div>
+            <div style="display:flex; gap:5px; align-items:center; margin-bottom:5px; margin-left:18px;">
+              <div style="width:16px; height:16px; background:#2a4040; border:0.5px solid rgba(255,255,255,0.2); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(180,175,230,0.85);">#2a4040 (bare forest — dark teal)</span>
+            </div>
+                        <div style="font-size:8px; color:rgba(180,175,230,0.8); margin-bottom:4px; font-weight:500;">4% accent</div>
+            <div style="display:flex; gap:5px; align-items:center; margin-left:18px;">
+              <div style="width:16px; height:16px; background:linear-gradient(to right,#141c50,#283060); border:0.5px solid rgba(255,255,255,0.2); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(180,175,230,0.8);">#141c50→#283060 (transition to sky above)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="background:#ffffff; padding:12px; border-left:0.5px solid #d4cfc8;">
+        <div style="font-size:8px; letter-spacing:0.12em; text-transform:uppercase; color:#1a1814; margin-bottom:8px;">Yachay condor — primary wisdom (upper zone)</div>
+        <div style="display:flex; gap:4px; align-items:center; margin-bottom:4px;">
+          <div style="width:16px; height:16px; background:#D8D8D8; border:0.5px solid #d4cfc8;"></div>
+          <span style="font-size:9px; color:#1a1814;">silver-white on midnight indigo</span>
+        </div>
+        <div style="font-size:9px; color:#4a4640; line-height:1.5; margin-bottom:10px;">Centered on seam, wings bilateral. Carries Yachay — wisdom through altitude.</div>
+        <div style="font-size:8px; letter-spacing:0.12em; text-transform:uppercase; color:#1a1814; margin-bottom:5px;">Mayu — diagonal arc</div>
+        <div style="display:flex; gap:4px; margin-bottom:8px;">
+          <div style="width:16px; height:16px; background:#C0B8D8; border:0.5px solid #d4cfc8;"></div>
+          <div style="width:16px; height:16px; background:#E0E8FF; border:0.5px solid #d4cfc8;"></div>
+          <span style="font-size:9px; color:#4a4640;">periwinkle-white brushstroke</span>
+        </div>
+        <div style="font-size:8px; letter-spacing:0.12em; text-transform:uppercase; color:#1a1814; margin-bottom:5px;">Face A proportion</div>
+        <div style="display:flex; gap:5px; align-items:center; margin-bottom:3px;">
+          <div style="width:32px; height:8px; background:#0d1238; border:0.5px solid #d4cfc8;"></div>
+          <span style="font-size:9px; color:#1a1814;">65% ground</span>
+        </div>
+        <div style="display:flex; gap:5px; align-items:center; margin-bottom:3px;">
+          <div style="width:16px; height:8px; background:#D8D8D8; border:0.5px solid #d4cfc8;"></div>
+          <span style="font-size:9px; color:#1a1814;">20% narrative</span>
+        </div>
+        <div style="display:flex; gap:5px; align-items:center; margin-bottom:3px;">
+          <div style="width:8px; height:8px; background:#E8B840; border:0.5px solid #d4cfc8;"></div>
+          <span style="font-size:9px; color:#1a1814;">10% accent</span>
+        </div>
+        <div style="display:flex; gap:5px; align-items:center; margin-left:18px;">
+          <div style="width:4px; height:8px; background:#3a3068; border:0.5px solid #d4cfc8;"></div>
+          <span style="font-size:9px; color:#1a1814;">5% gradient</span>
+        </div>
+      </div>
+    </div>
+    <div style="background:#ffffff; padding:5px 14px; font-size:8px; letter-spacing:0.1em; text-transform:uppercase; color:#1a1814; display:flex; gap:8px; align-items:center; border-top:0.5px solid #d4cfc8;">
+      Fringe:
+      <div style="display:flex;gap:3px;align-items:center;"><div style="width:14px;height:14px;background:#E0E8FF;border:0.5px solid #d4cfc8;"></div><span>starlight white-blue</span></div>
+      · ch'ukay seam:
+      <div style="display:flex;gap:3px;align-items:center;"><div style="width:14px;height:14px;background:#D8D8D8;border:0.5px solid #d4cfc8;"></div><span>silver (Milky Way as seam)</span></div>
+    </div>
+
+    <div style="background:#ffffff; color:#1a1814; padding:8px 14px; font-size:9px; letter-spacing:0.15em; text-transform:uppercase; font-weight:500; border-top:0.5px solid #d4cfc8; border-bottom:0.5px solid #d4cfc8;">Poncho — Color Schema · Face B · Day Sky · Festival Joy</div>
+
+    <div style="display:grid; grid-template-columns:2fr 1fr; gap:0; border-bottom:0.5px solid #d4cfc8;">
+      <div>
+        <div style="background:#ffffff; color:#1a1814; padding:5px 12px; font-size:8px; letter-spacing:0.13em; text-transform:uppercase; border-bottom:0.5px solid #d4cfc8;">Upper sky — 65% of total face</div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:0; border-bottom:0.5px solid #d4cfc8;">
+          <div style="background:linear-gradient(to top, #c8a040, #9890a8, #8098c8); padding:12px; border-right:4px solid #C8A840;">
+            <div style="font-size:8px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,250,220,0.95); margin-bottom:4px;">Upper-left · Sunrise</div>
+            <div style="font-size:14px; font-weight:500; color:#fff8e0; margin-bottom:5px;">Dawn breaking</div>
+            <div style="font-size:10px; color:rgba(255,248,220,0.95); line-height:1.5; margin-bottom:8px;">Powder Blue + pale warm yellow. Energetic, upward, happy.</div>
+                        <div style="font-size:8px; color:rgba(255,248,200,0.85); margin-bottom:4px; font-weight:500;">80% base — gradient bottom to top</div>
+            <div style="height:18px; margin-bottom:5px; margin-left:18px; border:0.5px solid rgba(0,0,0,0.15); background:linear-gradient(to right, #c8a040, #9890a8, #8098c8); display:flex; align-items:center; justify-content:space-between; padding:0 6px;">
+              <span style="font-size:8px; color:rgba(255,240,180,0.95);">#c8a040 (warm gold — horizon/bottom)</span>
+              <span style="font-size:8px; color:#fff;">#8098c8 (Powder Blue — zenith/top)</span>
+            </div>
+                        <div style="font-size:8px; color:rgba(255,248,200,0.85); margin-bottom:4px; font-weight:500;">16% narrative</div>
+            <div style="display:flex; gap:5px; align-items:center; margin-bottom:4px; margin-left:18px;">
+              <div style="width:16px; height:16px; background:#F5D060; border:0.5px solid rgba(0,0,0,0.2); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(255,248,200,0.95);">#F5D060 (sun disc — solar gold)</span>
+            </div>
+            <div style="display:flex; gap:5px; align-items:center; margin-bottom:4px; margin-left:18px;">
+              <div style="width:16px; height:16px; background:#E8C5C0; border:0.5px solid rgba(0,0,0,0.2); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(255,248,200,0.95);">#E8C5C0 (halo — Dusty Rose)</span>
+            </div>
+            <div style="display:flex; gap:5px; align-items:center; margin-bottom:5px; margin-left:18px;">
+              <div style="width:16px; height:16px; background:#F0A860; border:0.5px solid rgba(0,0,0,0.2); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(255,248,200,0.95);">#F0A860 (amber glow — dawn amber)</span>
+            </div>
+                        <div style="font-size:8px; color:rgba(255,248,200,0.85); margin-bottom:4px; font-weight:500;">4% accent</div>
+            <div style="display:flex; gap:5px; align-items:center; margin-left:18px;">
+              <div style="width:16px; height:16px; background:#C8A840; border:0.5px solid rgba(0,0,0,0.2); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(255,248,200,0.95);">#C8A840 (ch'ukay seam — gold)</span>
+            </div>
+          </div>
+          <div style="background:#6888b8; padding:12px;">
+            <div style="font-size:8px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.85); margin-bottom:4px;">Upper-right · Day</div>
+            <div style="font-size:14px; font-weight:500; color:#fff; margin-bottom:5px;">Midday sky</div>
+            <div style="font-size:10px; color:rgba(255,255,255,0.9); line-height:1.5; margin-bottom:8px;">Pure Powder Blue anchor. Condor in full sun. Chakana centered.</div>
+                        <div style="font-size:8px; color:rgba(255,255,255,0.85); margin-bottom:4px; font-weight:500;">88% base</div>
+            <div style="display:flex; gap:5px; align-items:center; margin-bottom:5px; margin-left:18px;">
+              <div style="width:16px; height:16px; background:#6888b8; border:0.5px solid rgba(255,255,255,0.3); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(255,255,255,0.95);">#6888b8 (Powder Blue — dominant)</span>
+            </div>
+                        <div style="font-size:8px; color:rgba(255,255,255,0.85); margin-bottom:4px; font-weight:500;">12% narrative</div>
+            <div style="display:flex; gap:5px; align-items:center; margin-bottom:4px; margin-left:18px;">
+              <div style="width:16px; height:16px; background:#FAFAFA; border:0.5px solid rgba(0,0,0,0.2); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(255,255,255,0.95);">#FAFAFA (Condor body — white)</span>
+            </div>
+            <div style="display:flex; gap:5px; align-items:center; margin-left:18px;">
+              <div style="width:16px; height:16px; background:#F5D060; border:0.5px solid rgba(0,0,0,0.2); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(255,255,255,0.95);">#F5D060 (Condor wings/Chakana — solar gold)</span>
+            </div>
+          </div>
+        </div>
+        <div style="background:#ffffff; color:#1a1814; padding:3px 12px; font-size:8px; letter-spacing:0.1em; text-transform:uppercase; text-align:center; border-top:0.5px solid #d4cfc8; border-bottom:0.5px solid #d4cfc8;">↓ sky becomes earth — no hard line</div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:0;">
+          <div style="background:#607888; padding:12px; border-right:4px solid #C8A840;">
+            <div style="font-size:8px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(220,240,255,0.9); margin-bottom:4px;">Lower-left · Spring</div>
+            <div style="font-size:14px; font-weight:500; color:#e8f8ff; margin-bottom:5px;">Mist, first growth</div>
+            <div style="font-size:10px; color:rgba(220,240,255,0.9); line-height:1.5; margin-bottom:6px;">New-growth sage, Dusty Rose tika buds, lake still cool.</div>
+                        <div style="font-size:8px; color:rgba(220,240,255,0.9); margin-bottom:4px; font-weight:500;">84% base</div>
+            <div style="display:flex; gap:5px; align-items:center; margin-bottom:5px; margin-left:18px;">
+              <div style="width:16px; height:16px; background:#607888; border:0.5px solid rgba(255,255,255,0.3); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(220,240,255,0.95);">#607888 (lighter teal — dominant)</span>
+            </div>
+                        <div style="font-size:8px; color:rgba(220,240,255,0.9); margin-bottom:4px; font-weight:500;">12% narrative</div>
+            <div style="display:flex; gap:5px; align-items:center; margin-bottom:4px; margin-left:18px;">
+              <div style="width:16px; height:16px; background:#a8c8a0; border:0.5px solid rgba(0,0,0,0.15); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(220,240,255,0.95);">#a8c8a0 (new growth — spring green)</span>
+            </div>
+            <div style="display:flex; gap:5px; align-items:center; margin-bottom:5px; margin-left:18px;">
+              <div style="width:16px; height:16px; background:#E8C5C0; border:0.5px solid rgba(0,0,0,0.15); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(220,240,255,0.95);">#E8C5C0 (tika buds — Dusty Rose)</span>
+            </div>
+                        <div style="font-size:8px; color:rgba(220,240,255,0.9); margin-bottom:4px; font-weight:500;">4% accent</div>
+            <div style="display:flex; gap:5px; align-items:center; margin-left:18px;">
+              <div style="width:16px; height:16px; background:linear-gradient(to right,#607888,#7898b8); border:0.5px solid rgba(255,255,255,0.2); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(220,240,255,0.9);">#607888→#7898b8 (transition to sky above)</span>
+            </div>
+          </div>
+          <div style="background:#487068; padding:12px;">
+            <div style="font-size:8px; letter-spacing:0.1em; text-transform:uppercase; color:rgba(200,240,220,0.9); margin-bottom:4px;">Lower-right · Summer</div>
+            <div style="font-size:14px; font-weight:500; color:#d0f0e0; margin-bottom:5px;">Full sun, abundant</div>
+            <div style="font-size:10px; color:rgba(210,245,230,0.95); line-height:1.5; margin-bottom:6px;">Vivid lake, full tika flowers, puma in warm ochre. Max saturation.</div>
+                        <div style="font-size:8px; color:rgba(200,240,220,0.9); margin-bottom:4px; font-weight:500;">84% base</div>
+            <div style="display:flex; gap:5px; align-items:center; margin-bottom:5px; margin-left:18px;">
+              <div style="width:16px; height:16px; background:#487068; border:0.5px solid rgba(255,255,255,0.3); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(200,240,220,0.95);">#487068 (teal-sage — dominant)</span>
+            </div>
+                        <div style="font-size:8px; color:rgba(200,240,220,0.9); margin-bottom:4px; font-weight:500;">12% narrative</div>
+            <div style="display:flex; gap:5px; align-items:center; margin-bottom:4px; margin-left:18px;">
+              <div style="width:16px; height:16px; background:#CC5050; border:0.5px solid rgba(0,0,0,0.2); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(200,240,220,0.95);">#CC5050 (tika flower — red)</span>
+            </div>
+            <div style="display:flex; gap:5px; align-items:center; margin-bottom:4px; margin-left:18px;">
+              <div style="width:16px; height:16px; background:#F0B8C8; border:0.5px solid rgba(0,0,0,0.2); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(200,240,220,0.95);">#F0B8C8 (tika — pink)</span>
+            </div>
+            <div style="display:flex; gap:5px; align-items:center; margin-bottom:5px; margin-left:18px;">
+              <div style="width:16px; height:16px; background:#c8901c; border:0.5px solid rgba(0,0,0,0.2); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(200,240,220,0.95);">#c8901c (puma — warm ochre)</span>
+            </div>
+                        <div style="font-size:8px; color:rgba(200,240,220,0.9); margin-bottom:4px; font-weight:500;">4% accent</div>
+            <div style="display:flex; gap:5px; align-items:center; margin-left:18px;">
+              <div style="width:16px; height:16px; background:linear-gradient(to right,#487068,#6888b8); border:0.5px solid rgba(255,255,255,0.2); flex-shrink:0;"></div>
+              <span style="font-size:9px; color:rgba(200,240,220,0.9);">#487068→#6888b8 (transition to sky above)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="background:#ffffff; padding:12px; border-left:0.5px solid #d4cfc8;">
+        <div style="font-size:8px; letter-spacing:0.12em; text-transform:uppercase; color:#1a1814; margin-bottom:6px;">Yachay condor — Face B version</div>
+        <div style="display:flex; gap:4px; margin-bottom:3px;">
+          <div style="width:16px; height:16px; background:#FAFAFA; border:0.5px solid #d4cfc8;"></div>
+          <div style="width:16px; height:16px; background:#F5D060; border:0.5px solid #d4cfc8;"></div>
+          <span style="font-size:9px; color:#1a1814;">white body + gold-lit wings</span>
+        </div>
+        <div style="font-size:9px; color:#4a4640; line-height:1.5; margin-bottom:10px;">Full daylight — celebratory, ascending.</div>
+        <div style="font-size:8px; letter-spacing:0.12em; text-transform:uppercase; color:#1a1814; margin-bottom:5px;">Chakana — Day quadrant</div>
+        <div style="display:flex; gap:4px; margin-bottom:10px;">
+          <div style="width:16px; height:16px; background:#FAFAFA; border:0.5px solid #d4cfc8;"></div>
+          <span style="font-size:9px; color:#4a4640;">natural white on Powder Blue</span>
+        </div>
+        <div style="font-size:8px; letter-spacing:0.12em; text-transform:uppercase; color:#1a1814; margin-bottom:5px;">Face B proportion</div>
+        <div style="display:flex; gap:5px; align-items:center; margin-bottom:3px;">
+          <div style="width:32px; height:8px; background:#6888b8; border:0.5px solid #d4cfc8;"></div>
+          <span style="font-size:9px; color:#1a1814;">65% Powder Blue + warm gold</span>
+        </div>
+        <div style="display:flex; gap:5px; align-items:center; margin-bottom:3px;">
+          <div style="width:16px; height:8px; background:#F5D060; border:0.5px solid #d4cfc8;"></div>
+          <span style="font-size:9px; color:#1a1814;">20% narrative</span>
+        </div>
+        <div style="display:flex; gap:5px; align-items:center; margin-left:18px;">
+          <div style="width:8px; height:8px; background:#CC5050; border:0.5px solid #d4cfc8;"></div>
+          <span style="font-size:9px; color:#1a1814;">10% accent — tika red/pink</span>
+        </div>
+      </div>
+    </div>
+    <div style="background:#ffffff; padding:5px 14px; font-size:8px; letter-spacing:0.1em; text-transform:uppercase; color:#1a1814; display:flex; gap:8px; align-items:center; border-top:0.5px solid #d4cfc8;">
+      Fringe:
+      <div style="display:flex;gap:3px;align-items:center;"><div style="width:14px;height:14px;background:#C86868;border:0.5px solid #d4cfc8;"></div><span>sunrise red</span></div>
+      or
+      <div style="display:flex;gap:3px;align-items:center;"><div style="width:14px;height:14px;background:#F5D060;border:0.5px solid #d4cfc8;"></div><span>solar gold</span></div>
+      · ch'ukay seam:
+      <div style="display:flex;gap:3px;align-items:center;"><div style="width:14px;height:14px;background:#F5D060;border:0.5px solid #d4cfc8;"></div><span>solar gold</span></div>
+    </div>
+  </div>
+
+
+  <!-- CHULLO COLOR SCHEMA -->
+  <div style="margin:24px 0; border:0.5px solid #d4cfc8; overflow:hidden; font-family:&#39;Jost&#39;,sans-serif; font-size:11px;">
+    <div style="background:#ffffff; color:#1a1814; padding:8px 14px; font-size:9px; letter-spacing:0.15em; text-transform:uppercase; font-weight:500; border-bottom:0.5px solid #d4cfc8;">Chullo — Color Schema · Chinchero · Baby Alpaca · Reversible</div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:0; align-items:stretch;">
+      <div style="border-right:0.5px solid #d4cfc8; display:flex; flex-direction:column;">
+        <div style="background:linear-gradient(to right, #060818 0%, #1a1848 45%, #283060 100%); padding:10px 12px; border-bottom:0.5px solid #d4cfc8;">
+          <div style="font-size:8px; letter-spacing:0.12em; text-transform:uppercase; color:rgba(200,195,255,0.8); margin-bottom:10px;">Night face — crown-to-brim gradient</div>
+          <div style="display:flex; justify-content:space-between; font-size:8px; color:rgba(200,195,255,0.7);"><span>crown #060818</span><span>brim #283060</span></div>
+        </div>
+        <div style="background:#ffffff; padding:10px 12px; border-bottom:0.5px solid #d4cfc8;">
+          <div style="font-size:8px; text-transform:uppercase; letter-spacing:0.1em; color:#1a1814; margin-bottom:5px; font-weight:500;">Crown pompon — all five colors</div>
+          <div style="display:flex; gap:5px; align-items:center; margin-bottom:3px; margin-left:18px;">
+            <div style="width:14px; height:14px; background:#D8D8D8; border:0.5px solid #d4cfc8; flex-shrink:0;"></div>
+            <span style="font-size:9px; color:#1a1814;">#D8D8D8 (Winter — silver)</span>
+          </div>
+          <div style="display:flex; gap:5px; align-items:center; margin-bottom:3px; margin-left:18px;">
+            <div style="width:14px; height:14px; background:#E8C5C0; border:0.5px solid #d4cfc8; flex-shrink:0;"></div>
+            <span style="font-size:9px; color:#1a1814;">#E8C5C0 (Spring — Dusty Rose)</span>
+          </div>
+          <div style="display:flex; gap:5px; align-items:center; margin-bottom:3px; margin-left:18px;">
+            <div style="width:14px; height:14px; background:#F5D060; border:0.5px solid #d4cfc8; flex-shrink:0;"></div>
+            <span style="font-size:9px; color:#1a1814;">#F5D060 (Summer — solar gold)</span>
+          </div>
+          <div style="display:flex; gap:5px; align-items:center; margin-bottom:3px; margin-left:18px;">
+            <div style="width:14px; height:14px; background:#C4A8BA; border:0.5px solid #d4cfc8; flex-shrink:0;"></div>
+            <span style="font-size:9px; color:#1a1814;">#C4A8BA (Autumn — Mauve)</span>
+          </div>
+          <div style="display:flex; gap:5px; align-items:center; margin-left:18px;">
+            <div style="width:14px; height:14px; background:#C0B8D8; border:0.5px solid #d4cfc8; flex-shrink:0;"></div>
+            <span style="font-size:9px; color:#1a1814;">#C0B8D8 (sky between seasons — Periwinkle)</span>
+          </div>
+        </div>
+        <div style="background:#ffffff; padding:10px 12px; border-bottom:0.5px solid #d4cfc8;">
+          <div style="font-size:8px; text-transform:uppercase; letter-spacing:0.1em; color:#1a1814; margin-bottom:5px; font-weight:500;">Chakana at crown</div>
+          <div style="display:flex; gap:5px; align-items:center; margin-left:18px;">
+            <div style="width:14px; height:14px; background:#FAFAFA; border:0.5px solid #d4cfc8; flex-shrink:0;"></div>
+            <span style="font-size:9px; color:#1a1814;">#FAFAFA (four arms = four seasons — white on midnight)</span>
+          </div>
+        </div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; border-top:0.5px solid #d4cfc8; flex:1;">
+          <div style="background:#ffffff; padding:8px 10px; border-right:0.5px solid #d4cfc8;">
+            <div style="font-size:8px; text-transform:uppercase; letter-spacing:0.09em; color:#1a1814; margin-bottom:5px; font-weight:500;">Left cord (Winter)</div>
+            <div style="display:flex; gap:5px; align-items:center; margin-left:18px;">
+              <div style="width:14px; height:14px; background:#E0E8FF; border:0.5px solid #d4cfc8; flex-shrink:0;"></div>
+              <span style="font-size:8px; color:#1a1814;">#E0E8FF (starlight — white-blue)</span>
+            </div>
+          </div>
+          <div style="background:#ffffff; padding:8px 10px;">
+            <div style="font-size:8px; text-transform:uppercase; letter-spacing:0.09em; color:#1a1814; margin-bottom:5px; font-weight:500;">Right cord (Spring)</div>
+            <div style="display:flex; gap:5px; align-items:center; margin-bottom:3px; margin-left:18px;">
+              <div style="width:14px; height:14px; background:#e8c040; border:0.5px solid #d4cfc8; flex-shrink:0;"></div>
+              <span style="font-size:8px; color:#1a1814;">#e8c040 (dawn — pale gold)</span>
+            </div>
+            <div style="display:flex; gap:5px; align-items:center; margin-left:18px;">
+              <div style="width:14px; height:14px; background:#E8C5C0; border:0.5px solid #d4cfc8; flex-shrink:0;"></div>
+              <span style="font-size:8px; color:#1a1814;">#E8C5C0 (bud — Dusty Rose)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="border-left:0.5px solid #d4cfc8; display:flex; flex-direction:column;">
+        <div style="background:linear-gradient(to right, #1a3060 0%, #3a5898 45%, #6888b8 100%); padding:10px 12px; border-bottom:0.5px solid #d4cfc8;">
+          <div style="font-size:8px; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,250,220,0.85); margin-bottom:10px;">Day face (reversed) — crown-to-brim gradient</div>
+          <div style="display:flex; justify-content:space-between; font-size:8px; color:rgba(255,250,220,0.75);"><span>crown — deepest day blue</span><span>brim — Powder Blue #6888b8</span></div>
+        </div>
+        <div style="background:#ffffff; padding:10px 12px; flex:1; display:flex; flex-direction:column; justify-content:space-between;">
+          <div>
+            <div style="font-size:8px; letter-spacing:0.1em; text-transform:uppercase; color:#1a1814; margin-bottom:5px; font-weight:500;">Season mapping summary</div>
+            <div style="font-size:9px; color:#1a1814; line-height:1.7;">Night face L = Winter · Night face R = Spring<br>Day face L = Spring/Sunrise · Day face R = Summer<br>Pompon = all four seasons simultaneously<br>Chakana = four seasons in Andean cosmology</div>
+          </div>
+          <div style="margin-top:8px; font-size:8px; color:#4a4640; font-style:italic; padding-top:8px; border-top:0.5px solid #d4cfc8;">Same pompon reads identically from above on both faces.</div>
+        </div>
+      </div>
+    </div>
+    <div style="display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:0; border-top:0.5px solid #d4cfc8;">
+      <div style="background:#0d1238; padding:8px 10px; border-right:0.5px solid rgba(255,255,255,0.1); display:flex; flex-direction:column;">
+        <div style="font-size:8px; text-transform:uppercase; letter-spacing:0.1em; color:rgba(180,170,255,0.8); margin-bottom:5px; font-weight:500;">Left flap · Night (Winter)</div>
+        <div style="font-size:8px; color:rgba(200,195,255,0.75); margin-bottom:3px;">base</div>
+        <div style="display:flex; gap:5px; align-items:center; margin-bottom:5px; margin-left:12px;">
+          <div style="width:14px; height:14px; background:#0d1238; border:0.5px solid rgba(255,255,255,0.3); flex-shrink:0;"></div>
+          <span style="font-size:8px; color:rgba(200,195,255,0.85);">#0d1238 (pure night — dominant)</span>
+        </div>
+        <div style="font-size:8px; color:rgba(200,195,255,0.75); margin-bottom:3px;">tonal motif</div>
+        <div style="display:flex; gap:5px; align-items:center; margin-bottom:3px; margin-left:12px;">
+          <div style="width:14px; height:14px; background:#D8D8D8; border:0.5px solid rgba(255,255,255,0.25); flex-shrink:0;"></div>
+          <span style="font-size:8px; color:rgba(200,195,255,0.8);">#D8D8D8 (bare branch — silver)</span>
+        </div>
+        <div style="display:flex; gap:5px; align-items:center; margin-left:12px;">
+          <div style="width:14px; height:14px; background:#C0B8D8; border:0.5px solid rgba(255,255,255,0.25); flex-shrink:0;"></div>
+          <span style="font-size:8px; color:rgba(200,195,255,0.8);">#C0B8D8 (Mayu — periwinkle)</span>
+        </div>
+        <div style="margin-top:auto; padding-top:6px;">
+          <span style="display:inline-block; font-size:7.5px; padding:1px 6px; border:0.5px solid rgba(255,255,255,0.4); color:rgba(255,255,255,0.8);">anchor · Night</span>
+        </div>
+      </div>
+      <div style="background:#1a1040; padding:8px 10px; border-right:0.5px solid rgba(255,255,255,0.08); display:flex; flex-direction:column;">
+        <div style="font-size:8px; text-transform:uppercase; letter-spacing:0.1em; color:rgba(220,180,255,0.85); margin-bottom:5px; font-weight:500;">Right flap · Pre-dawn (Spring)</div>
+        <div style="font-size:8px; color:rgba(220,180,255,0.75); margin-bottom:3px;">base — gradient</div>
+        <div style="display:flex; gap:5px; align-items:center; margin-bottom:3px; margin-left:12px;">
+          <div style="width:14px; height:14px; background:#0d1238; border:0.5px solid rgba(255,255,255,0.2); flex-shrink:0;"></div>
+          <span style="font-size:8px; color:rgba(220,180,255,0.8);">#0d1238 (night base — dominant)</span>
+        </div>
+        <div style="display:flex; gap:5px; align-items:center; margin-bottom:5px; margin-left:12px;">
+          <div style="width:14px; height:14px; background:#e8c040; border:0.5px solid rgba(255,255,255,0.2); flex-shrink:0;"></div>
+          <span style="font-size:8px; color:rgba(220,180,255,0.8);">#e8c040 (pre-dawn tint — pale gold)</span>
+        </div>
+        <div style="font-size:8px; color:rgba(220,180,255,0.75); margin-bottom:3px;">tonal motif</div>
+        <div style="display:flex; gap:5px; align-items:center; margin-left:12px;">
+          <div style="width:14px; height:14px; background:#c8d860; border:0.5px solid rgba(255,255,255,0.2); flex-shrink:0; opacity:0.6;"></div>
+          <span style="font-size:8px; color:rgba(220,180,255,0.75);">(sprouting bud — tonal)</span>
+        </div>
+        <div style="margin-top:auto; padding-top:6px;">
+          <span style="display:inline-block; font-size:7.5px; padding:1px 6px; border:0.5px solid rgba(255,220,80,0.6); color:rgba(255,220,80,0.95);">+pale warm yellow</span>
+        </div>
+      </div>
+      <div style="background:#7898b8; padding:8px 10px; border-right:0.5px solid rgba(255,255,255,0.15); display:flex; flex-direction:column;">
+        <div style="font-size:8px; text-transform:uppercase; letter-spacing:0.1em; color:rgba(255,250,220,0.95); margin-bottom:5px; font-weight:500;">Left flap · Sunrise (Spring)</div>
+        <div style="font-size:8px; color:rgba(255,250,220,0.8); margin-bottom:3px;">base — gradient</div>
+        <div style="display:flex; gap:5px; align-items:center; margin-bottom:3px; margin-left:12px;">
+          <div style="width:14px; height:14px; background:#8098c8; border:0.5px solid rgba(0,0,0,0.2); flex-shrink:0;"></div>
+          <span style="font-size:8px; color:rgba(255,250,220,0.95);">#8098c8 (day sky base — Powder Blue)</span>
+        </div>
+        <div style="display:flex; gap:5px; align-items:center; margin-bottom:5px; margin-left:12px;">
+          <div style="width:14px; height:14px; background:#e8c040; border:0.5px solid rgba(0,0,0,0.2); flex-shrink:0;"></div>
+          <span style="font-size:8px; color:rgba(255,250,220,0.95);">#e8c040 (sunrise tint — pale gold)</span>
+        </div>
+        <div style="font-size:8px; color:rgba(255,250,220,0.8); margin-bottom:3px;">tonal motif</div>
+        <div style="display:flex; gap:5px; align-items:center; margin-left:12px;">
+          <div style="width:14px; height:14px; background:#a8c860; border:0.5px solid rgba(0,0,0,0.2); flex-shrink:0; opacity:0.6;"></div>
+          <span style="font-size:8px; color:rgba(255,250,200,0.8);">(sprouting bud — tonal)</span>
+        </div>
+        <div style="margin-top:auto; padding-top:6px;">
+          <span style="display:inline-block; font-size:7.5px; padding:1px 6px; border:0.5px solid rgba(255,220,80,0.6); color:rgba(255,220,80,0.95);">+pale warm yellow</span>
+        </div>
+      </div>
+      <div style="background:#6888b8; padding:8px 10px; display:flex; flex-direction:column;">
+        <div style="font-size:8px; text-transform:uppercase; letter-spacing:0.1em; color:rgba(255,255,255,0.9); margin-bottom:5px; font-weight:500;">Right flap · Day (Summer)</div>
+        <div style="font-size:8px; color:rgba(255,255,255,0.75); margin-bottom:3px;">base</div>
+        <div style="display:flex; gap:5px; align-items:center; margin-bottom:5px; margin-left:12px;">
+          <div style="width:14px; height:14px; background:#6888b8; border:0.5px solid rgba(255,255,255,0.3); flex-shrink:0;"></div>
+          <span style="font-size:8px; color:rgba(255,255,255,0.9);">#6888b8 (Powder Blue — dominant)</span>
+        </div>
+        <div style="font-size:8px; color:rgba(255,255,255,0.75); margin-bottom:3px;">tonal motif</div>
+        <div style="display:flex; gap:5px; align-items:center; margin-left:12px;">
+          <div style="width:14px; height:14px; background:#2a3888; border:0.5px solid rgba(255,255,255,0.3); flex-shrink:0; opacity:0.7;"></div>
+          <span style="font-size:8px; color:rgba(255,255,255,0.8);">(Chakana — deep indigo on light ground)</span>
+        </div>
+        <div style="margin-top:auto; padding-top:6px;">
+          <span style="display:inline-block; font-size:7.5px; padding:1px 6px; border:0.5px solid rgba(255,255,255,0.45); color:rgba(255,255,255,0.85);">anchor · Day</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- MUFFLER COLOR SCHEMA -->
+  <div style="margin:24px 0; border:0.5px solid #d4cfc8; overflow:hidden; font-family:&#39;Jost&#39;,sans-serif; font-size:11px;">
+    <div style="background:#ffffff; color:#1a1814; padding:8px 14px; font-size:9px; letter-spacing:0.15em; text-transform:uppercase; font-weight:500; border-bottom:0.5px solid #d4cfc8;">Muffler — Color Schema · Chahuaytire · Baby Alpaca · Two Sides</div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:0;">
+      <div>
+        <div style="background:#F5D4B8; padding:9px 12px; border-bottom:0.5px solid rgba(0,0,0,0.1); border-right:0.5px solid rgba(0,0,0,0.08);">
+          <div style="font-size:8px; letter-spacing:0.12em; text-transform:uppercase; color:#1a1814; margin-bottom:5px; font-weight:500;">Dawn end — Sunrise connection (Spring/Summer)</div>
+          <div style="font-size:8px; color:#1a1814; margin-bottom:5px;">Border base: #F5D4B8 — Q'olle lightest bath + trace cochineal + undyed white alpaca</div>
+          <div style="font-size:8px; color:#1a1814; margin-bottom:3px; font-weight:500;">narrative</div>
+          <div style="display:flex; gap:5px; align-items:center; margin-bottom:3px; margin-left:18px;">
+            <div style="width:14px; height:14px; background:#F5D060; border:0.5px solid rgba(0,0,0,0.2); flex-shrink:0;"></div>
+            <span style="font-size:8px; color:#1a1814;">#F5D060 (sun — solar gold)</span>
+          </div>
+          <div style="display:flex; gap:5px; align-items:center; margin-bottom:3px; margin-left:18px;">
+            <div style="width:14px; height:14px; background:#E8C5C0; border:0.5px solid rgba(0,0,0,0.2); flex-shrink:0;"></div>
+            <span style="font-size:8px; color:#1a1814;">#E8C5C0 (dawn halo — Dusty Rose)</span>
+          </div>
+          <div style="display:flex; gap:5px; align-items:center; margin-bottom:3px; margin-left:18px;">
+            <div style="width:14px; height:14px; background:#F0A860; border:0.5px solid rgba(0,0,0,0.2); flex-shrink:0;"></div>
+            <span style="font-size:8px; color:#1a1814;">#F0A860 (horizon glow — dawn amber)</span>
+          </div>
+          <div style="display:flex; gap:5px; align-items:center; margin-bottom:5px; margin-left:18px;">
+            <div style="width:14px; height:14px; background:#F5D4B8; border:0.5px solid rgba(0,0,0,0.2); flex-shrink:0;"></div>
+            <span style="font-size:8px; color:#1a1814;">#F5D4B8 (border ground — warm peach)</span>
+          </div>
+          <div style="font-size:8px; color:#1a1814; margin-bottom:3px; font-weight:500;">fringe</div>
+          <div style="display:flex; gap:5px; align-items:center; margin-bottom:3px; margin-left:18px;">
+            <div style="width:14px; height:14px; background:#e8c040; border:0.5px solid rgba(0,0,0,0.2); flex-shrink:0;"></div>
+            <span style="font-size:8px; color:#1a1814;">#e8c040 (warm Q'olle gold)</span>
+          </div>
+          <div style="display:flex; gap:5px; align-items:center; margin-left:18px;">
+            <div style="width:14px; height:14px; background:#a8c8a0; border:0.5px solid rgba(0,0,0,0.15); flex-shrink:0;"></div>
+            <span style="font-size:8px; color:#1a1814;">#a8c8a0 (optional — spring sage thread)</span>
+          </div>
+        </div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; border-right:0.5px solid rgba(0,0,0,0.08);">
+          <div style="background:#B0BDD8; padding:9px 10px; border-right:0.5px solid rgba(0,0,0,0.12); border-bottom:0.5px solid rgba(0,0,0,0.1);">
+            <div style="font-size:8px; letter-spacing:0.09em; text-transform:uppercase; color:#1a1814; margin-bottom:5px; font-weight:500;">Side 1 — Spring/Winter</div>
+            <div style="font-size:8px; color:#1a1814; margin-bottom:3px; font-weight:500;">base</div>
+            <div style="display:flex; gap:5px; align-items:center; margin-bottom:5px; margin-left:12px;">
+              <div style="width:14px; height:14px; background:#B0BDD8; border:0.5px solid rgba(0,0,0,0.2); flex-shrink:0;"></div>
+              <span style="font-size:8px; color:#1a1814;">#B0BDD8 (Powder Blue — dominant)</span>
+            </div>
+            <div style="font-size:8px; color:#1a1814; margin-bottom:3px; font-weight:500;">narrative</div>
+            <div style="display:flex; gap:5px; align-items:center; margin-left:12px;">
+              <div style="width:14px; height:14px; background:#8888b8; border:0.5px solid rgba(0,0,0,0.15); flex-shrink:0;"></div>
+              <span style="font-size:8px; color:#1a1814;">#8888b8 (Tinkuy — deeper periwinkle)</span>
+            </div>
+          </div>
+          <div style="background:#C4A8BA; padding:9px 10px; border-bottom:0.5px solid rgba(0,0,0,0.1);">
+            <div style="font-size:8px; letter-spacing:0.09em; text-transform:uppercase; color:#1a1814; margin-bottom:5px; font-weight:500;">Side 2 — Summer/Autumn</div>
+            <div style="font-size:8px; color:#1a1814; margin-bottom:3px; font-weight:500;">base</div>
+            <div style="display:flex; gap:5px; align-items:center; margin-bottom:5px; margin-left:12px;">
+              <div style="width:14px; height:14px; background:#C4A8BA; border:0.5px solid rgba(0,0,0,0.2); flex-shrink:0;"></div>
+              <span style="font-size:8px; color:#1a1814;">#C4A8BA (Pale Mauve — dominant)</span>
+            </div>
+            <div style="font-size:8px; color:#1a1814; margin-bottom:3px; font-weight:500;">narrative</div>
+            <div style="display:flex; gap:5px; align-items:center; margin-left:12px;">
+              <div style="width:14px; height:14px; background:#d89090; border:0.5px solid rgba(0,0,0,0.15); flex-shrink:0;"></div>
+              <span style="font-size:8px; color:#1a1814;">#d89090 (Tinkuy — deeper Dusty Rose)</span>
+            </div>
+          </div>
+        </div>
+        <div style="background:#2a3060; padding:9px 12px; border-right:0.5px solid rgba(0,0,0,0.08);">
+          <div style="font-size:8px; letter-spacing:0.12em; text-transform:uppercase; color:rgba(200,195,255,0.9); margin-bottom:5px; font-weight:500;">Dusk end — Sunset connection (Autumn/Winter)</div>
+          <div style="font-size:8px; color:rgba(200,195,255,0.8); margin-bottom:3px; font-weight:500;">narrative</div>
+          <div style="display:flex; gap:5px; align-items:center; margin-bottom:3px; margin-left:18px;">
+            <div style="width:14px; height:14px; background:#C0B8D8; border:0.5px solid rgba(255,255,255,0.3); flex-shrink:0;"></div>
+            <span style="font-size:8px; color:rgba(200,195,255,0.9);">#C0B8D8 (dusk sky — Periwinkle)</span>
+          </div>
+          <div style="display:flex; gap:5px; align-items:center; margin-bottom:3px; margin-left:18px;">
+            <div style="width:14px; height:14px; background:#C4A8BA; border:0.5px solid rgba(255,255,255,0.3); flex-shrink:0;"></div>
+            <span style="font-size:8px; color:rgba(200,195,255,0.9);">#C4A8BA (dusk warmth — Mauve)</span>
+          </div>
+          <div style="display:flex; gap:5px; align-items:center; margin-bottom:5px; margin-left:18px;">
+            <div style="width:14px; height:14px; background:#E8B840; border:0.5px solid rgba(255,255,255,0.3); flex-shrink:0; opacity:0.8;"></div>
+            <span style="font-size:8px; color:rgba(200,195,255,0.9);">#E8B840 (last light — gold fading)</span>
+          </div>
+          <div style="font-size:8px; color:rgba(200,195,255,0.8); margin-bottom:3px; font-weight:500;">fringe</div>
+          <div style="display:flex; gap:5px; align-items:center; margin-left:18px;">
+            <div style="width:14px; height:14px; background:#D8D8D8; border:0.5px solid rgba(255,255,255,0.25); flex-shrink:0;"></div>
+            <span style="font-size:8px; color:rgba(200,195,255,0.85);">#D8D8D8 (pale starlight + optional silver — Winter)</span>
+          </div>
+        </div>
+      </div>
+      <div style="background:#ffffff; padding:12px;">
+        <div style="font-size:8px; letter-spacing:0.1em; text-transform:uppercase; color:#1a1814; margin-bottom:5px; font-weight:500;">Tinkuy — primary wisdom symbol</div>
+        <div style="display:flex; gap:5px; align-items:center; margin-bottom:3px; margin-left:18px;">
+          <div style="width:14px; height:14px; background:#8888b8; border:0.5px solid #d4cfc8; flex-shrink:0;"></div>
+          <span style="font-size:9px; color:#1a1814;">#8888b8 (Side 1 — deeper periwinkle)</span>
+        </div>
+        <div style="display:flex; gap:5px; align-items:center; margin-bottom:8px; margin-left:18px;">
+          <div style="width:14px; height:14px; background:#d89090; border:0.5px solid #d4cfc8; flex-shrink:0;"></div>
+          <span style="font-size:9px; color:#1a1814;">#d89090 (Side 2 — deeper Dusty Rose)</span>
+        </div>
+        <div style="font-size:9px; color:#4a4640; font-style:italic; margin-bottom:10px;">Two spirals meeting · visible when opened flat · present on both sides in their register</div>
+        <div style="font-size:8px; letter-spacing:0.1em; text-transform:uppercase; color:#1a1814; margin-bottom:5px; font-weight:500;">Seasonal compass summary</div>
+        <div style="font-size:9px; color:#1a1814; line-height:1.65;">Dawn end = Sunrise / Spring-Summer<br>Dusk end = Sunset / Autumn-Winter<br>Side 1 (Powder Blue) = cool half of year<br>Side 2 (Pale Mauve) = warm half of year<br>Held open: shows full seasonal arc</div>
+        <div style="margin-top:10px; font-size:8px; letter-spacing:0.1em; text-transform:uppercase; color:#1a1814; margin-bottom:5px; font-weight:500;">Selvedge + accent stripe</div>
+        <div style="display:flex; gap:5px; align-items:center; margin-bottom:3px; margin-left:18px;">
+          <div style="width:14px; height:14px; background:#B0BDD8; border:0.5px solid #d4cfc8; flex-shrink:0;"></div>
+          <span style="font-size:9px; color:#1a1814;">#B0BDD8 (chichilla border — full length)</span>
+        </div>
+        <div style="display:flex; gap:5px; align-items:center; margin-left:18px;">
+          <div style="width:14px; height:8px; background:#8080a8; border:0.5px solid #d4cfc8; flex-shrink:0;"></div>
+          <span style="font-size:9px; color:#1a1814;">#8080a8 (thin accent stripe — inside each border)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="footer">
+  <div class="footer-note">Brief de Coordinación — Encargo Cusco 2026 · Tres Piezas · Pitumarca · Chinchero · Cha</div></div></div></body></html>
