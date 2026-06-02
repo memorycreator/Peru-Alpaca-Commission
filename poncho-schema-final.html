@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)file:///Users/jinwjeong/Downloads/poncho-schema_6.html -->
+<html lang="en" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poncho Pitumarca — Quadrant Guide</title>
+<link href="./poncho-schema-final_files/css2" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Jost', sans-serif;
+    background: #ddd8cf;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 28px 16px 48px;
+  }
+
+  .page {
+    width: 100%;
+    max-width: 700px;
+    background: #f2ede6;
+    padding: 28px 24px 28px;
+    box-shadow: 0 4px 40px rgba(0,0,0,0.16);
+  }
+
+  /* ── Header ─────────────────────────────────────────────── */
+  .header {
+    border-bottom: 0.5px solid #bbb5aa;
+    padding-bottom: 14px;
+    margin-bottom: 18px;
+  }
+  .header-eyebrow {
+    font-size: 8px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #8a8070;
+    margin-bottom: 5px;
+  }
+  .header-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 21px;
+    font-weight: 600;
+    color: #1a1610;
+    line-height: 1.2;
+    margin-bottom: 4px;
+  }
+  .header-sub {
+    font-size: 10px;
+    color: #8a8070;
+    line-height: 1.5;
+  }
+
+  /* ── Face labels ─────────────────────────────────────────── */
+  .face-label {
+    font-size: 8px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #6a6258;
+    font-weight: 500;
+    padding: 0 2px;
+    margin-bottom: 4px;
+  }
+  .face-label.bottom { margin-top: 5px; margin-bottom: 0; }
+
+  /* ── Grid ────────────────────────────────────────────────── */
+  .quad-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+  }
+
+  /* ── Quadrant ────────────────────────────────────────────── */
+  .quadrant {
+    padding: 16px 40px 14px 40px;
+    min-height: 178px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .quad-pos {
+    font-size: 7.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    opacity: 0.45;
+    font-weight: 400;
+    margin-bottom: 8px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .main-block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Main color number — very large */
+  .color-num {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.03em;
+  }
+
+  /* Season/meaning — sizeable but clearly subordinate */
+  .color-meaning {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-top: 6px;
+    letter-spacing: 0.01em;
+  }
+
+  /* ── Narrative (small, blending accent numbers + motif words) ── */
+  .narrative {
+    margin-top: 14px;
+    padding-top: 10px;
+    font-size: 10px;
+    line-height: 1.6;
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: 0.01em;
+    text-align: center;
+  }
+  .narrative-nums {
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    font-size: 10px;
+  }
+  /* separator line adapts per tone */
+  .sep-light .narrative  { border-top: 0.5px solid rgba(255,255,255,0.2); }
+  .sep-dark  .narrative  { border-top: 0.5px solid rgba(0,0,0,0.12);     }
+
+  /* ── Neck hole ───────────────────────────────────────────── */
+  .neck-row {
+    display: flex;
+    align-items: center;
+    margin: 6px 0;
+  }
+  .neck-line  { flex: 1; height: 0.5px; background: #a09888; }
+  .neck-circle {
+    width: 96px; height: 96px;
+    border-radius: 50%;
+    border: 2.5px solid #8a8070;
+    background: radial-gradient(circle, #2a2620 0%, #1a1610 55%, #0e0c08 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow:
+      inset 0 4px 14px rgba(0,0,0,0.7),
+      inset 0 0 28px rgba(0,0,0,0.5),
+      0 0 0 3px #c0b8a8,
+      0 0 0 5px #a09888;
+  }
+  .neck-inner {
+    width: 64px; height: 64px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #0a0806 0%, #181410 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 3px 10px rgba(0,0,0,0.9);
+    border: 0.5px solid rgba(255,255,255,0.06);
+  }
+  .neck-text {
+    font-size: 6.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+  }
+
+  /* ── Color key ───────────────────────────────────────────── */
+  .color-key {
+    margin-top: 14px;
+    padding: 11px 14px;
+    background: #e8e3da;
+    border-top: 0.5px solid #bbb5aa;
+  }
+  .key-title {
+    font-size: 7.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #8a8070;
+    margin-bottom: 8px;
+  }
+  .key-swatches {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px 10px;
+  }
+  .key-item { display: flex; align-items: center; gap: 4px; }
+  .key-dot  {
+    width: 14px; height: 14px;
+    border-radius: 50%;
+    border: 0.5px solid rgba(0,0,0,0.12);
+    flex-shrink: 0;
+  }
+  .key-num { font-size: 9.5px; font-weight: 600; color: #3a3428; }
+
+  /* ── Weaver note ─────────────────────────────────────────── */
+  .note {
+    margin-top: 14px;
+    padding: 13px 16px;
+    border-left: 3px solid #B8A060;
+    background: #ede8df;
+  }
+  .note-title {
+    font-size: 8px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #6a6258;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  .note-text {
+    font-size: 10.5px;
+    line-height: 1.75;
+    color: #4a4438;
+  }
+  .note-text em { font-style: italic; color: #6a6258; }
+
+  /* ── Pattern edge strip ─────────────────────────────────── */
+  .quadrant { position: relative; overflow: hidden; }
+  .pat-strip {
+    position: absolute;
+    top: 0; bottom: 0;
+    width: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 0;
+  }
+  .pat-strip.left  { left: 0; }
+  .pat-strip.right { right: 0; }
+  .pat-ltr {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    letter-spacing: 0.05em;
+  }
+  .pat-name {
+    font-size: 7.5px;
+    font-weight: 500;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.8;
+    line-height: 1.2;
+  }
+
+  /* ── Print ───────────────────────────────────────────────── */
+  @media print {
+    * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+    body { background: white; padding: 0; }
+    .page { box-shadow: none; max-width: 100%; }
+  }
+  @media (max-width: 480px) {
+    .color-num { font-size: 44px; }
+    .color-meaning { font-size: 18px; }
+    .quadrant { min-height: 148px; padding: 12px 32px 10px 32px; }
+  }
+</style>
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="./poncho-schema-final_files/m=el_main_css"></head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <div class="header-eyebrow"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Cusco Traditional Textile Center · Pitumarca · Ticlla Technique</font></font></div>
+    <div class="header-title"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Poncho — Color Quadrant Guide</font></font></div>
+    <div class="header-sub"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Numbering based on wool samples sent · narrative suggestions are optional — the weaver adapts according to their judgment and tradition</font></font></div>
+  </div>
+
+  <!-- ══════════════ CARA A — LADO OSCURO ══════════════ -->
+  <div class="face-label"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">SIDE A — dark side · sunset / night</font></font></div>
+  <div class="quad-grid">
+
+    <!-- Lower Left = Invierno · #8 dark charcoal — viewer sees Otoño on left -->
+    <div class="quadrant sep-light" style="background:#54544e; color:#e8e4dc;">
+    <div class="pat-strip left" style="background:rgba(255,255,255,0.14);"><span class="pat-ltr"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">AND</font></font></span><span class="pat-name"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Spades</font></font></span></div>
+      <div class="quad-pos"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Lower Left</font></font></div>
+      <div class="main-block">
+        <div class="color-num"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">#8</font></font></div>
+        <div class="color-meaning"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">(Winter)</font></font></div>
+      </div>
+      <div class="narrative">
+        <span class="narrative-nums"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">#13 · #6</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;"> — Fallen pikes, Amaru asleep: the earth keeps the seed under the silence of the Apu
+      </font></font></div>
+    </div>
+
+    <!-- Lower Right = Otoño · #9 dark burgundy — viewer sees Invierno on right -->
+    <div class="quadrant sep-light" style="background:#702f36; color:#f8e6e4;">
+    <div class="pat-strip right" style="background:rgba(255,255,255,0.14);"><span class="pat-ltr"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">D</font></font></span><span class="pat-name"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Karaya Quiska</font></font></span></div>
+      <div class="quad-pos"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Lower Right</font></font></div>
+      <div class="main-block">
+        <div class="color-num"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">#9</font></font></div>
+        <div class="color-meaning"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">(Autumn)</font></font></div>
+      </div>
+      <div class="narrative">
+        <span class="narrative-nums"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">#10 · #6</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;"> — Karaya Quiska, Pachamama: the flow of Ayni in the harvest
+      </font></font></div>
+    </div>
+
+    <!-- Upper Left = Noche · #13 dark navy-teal (anchor) — viewer sees Atardecer on left -->
+    <div class="quadrant sep-light" style="background:#335a78; color:#d4e8f8;">
+    <div class="pat-strip left" style="background:rgba(255,255,255,0.14);"><span class="pat-ltr"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">TO</font></font></span><span class="pat-name"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Qenqo Chaska</font></font></span></div>
+      <div class="quad-pos"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Upper Left</font></font></div>
+      <div class="main-block">
+        <div class="color-num"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">#13</font></font></div>
+        <div class="color-meaning"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">(Evening)</font></font></div>
+      </div>
+      <div class="narrative">
+        <span class="narrative-nums"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">#12 · #11</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;"> — Mayu, Chakana: the path of the ancestors and the seeds of the new day
+      </font></font></div>
+    </div>
+
+    <!-- Upper Right = Atardecer · #10 very dark plum-grey — viewer sees Noche on right -->
+    <div class="quadrant sep-light" style="background:#584a59; color:#f0daf4;">
+    <div class="pat-strip right" style="background:rgba(255,255,255,0.14);"><span class="pat-ltr"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">B</font></font></span><span class="pat-name"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Kuntur</font></font></span></div>
+      <div class="quad-pos"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Upper Right</font></font></div>
+      <div class="main-block">
+        <div class="color-num"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">#10</font></font></div>
+        <div class="color-meaning"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">(Sunset)</font></font></div>
+      </div>
+      <div class="narrative">
+        <span class="narrative-nums"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">#9 · #11</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;"> — Condor Yachay, Ayni of the sky: the day returns its warmth to the earth
+      </font></font></div>
+    </div>
+
+  </div>
+
+  <!-- Neck hole -->
+  <div class="neck-row">
+    <div class="neck-line"></div>
+    <div class="neck-circle">
+      <div class="neck-inner">
+        <span class="neck-text"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">neck</font></font></span>
+      </div>
+    </div>
+    <div class="neck-line"></div>
+  </div>
+
+  <!-- ══════════════ CARA B — LADO CLARO ══════════════ -->
+  <div class="quad-grid">
+
+    <!-- Upper Right = Amanecer · #3 coral-salmon -->
+    <div class="quadrant sep-light" style="background:#ca5c44; color:#fff4f0;">
+    <div class="pat-strip left" style="background:rgba(255,255,255,0.18);"><span class="pat-ltr"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">TO</font></font></span><span class="pat-name"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Qenqo Chaska</font></font></span></div>
+      <div class="quad-pos"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Upper Right</font></font></div>
+      <div class="main-block">
+        <div class="color-num"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">#3</font></font></div>
+        <div class="color-meaning"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">(Sunrise)</font></font></div>
+      </div>
+      <div class="narrative">
+        <span class="narrative-nums"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">#1 · #11</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;"> — Chaska yields to Inti: the constellations bid farewell at dawn
+      </font></font></div>
+    </div>
+
+    <!-- Upper Left = Día · #12 steel blue (anchor) -->
+    <div class="quadrant sep-light" style="background:#7d94a9; color:#eef5ff;">
+    <div class="pat-strip right" style="background:rgba(255,255,255,0.18);"><span class="pat-ltr"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">B</font></font></span><span class="pat-name"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Kuntur</font></font></span></div>
+      <div class="quad-pos"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Upper Left</font></font></div>
+      <div class="main-block">
+        <div class="color-num"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">#12</font></font></div>
+        <div class="color-meaning"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">(Day)</font></font></div>
+      </div>
+      <div class="narrative">
+        <span class="narrative-nums"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">#1 · #3</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;"> — Cóndor Yachay, Chakana: wisdom and Inti in fullness
+      </font></font></div>
+    </div>
+
+    <!-- Lower Right = Primavera · #7 pale grey-sage -->
+    <div class="quadrant sep-dark" style="background:#979984; color:#1a2012;">
+    <div class="pat-strip left" style="background:rgba(0,0,0,0.1);"><span class="pat-ltr"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">F</font></font></span><span class="pat-name"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Calls</font></font></span></div>
+      <div class="quad-pos"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Lower Right</font></font></div>
+      <div class="main-block">
+        <div class="color-num"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">#7</font></font></div>
+        <div class="color-meaning"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">(Spring)</font></font></div>
+      </div>
+      <div class="narrative" style="color:#2a3220; text-align:center;">
+        <span class="narrative-nums" style="color:#1a2012;"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">#3 · #11</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;"> — Llama in the first pastures, Tika: Samay of Pachamama
+      </font></font></div>
+    </div>
+
+    <!-- Lower Left = Verano · #5 deeper sage -->
+    <div class="quadrant sep-dark" style="background:#6a9e6a; color:#1a2012;">
+    <div class="pat-strip right" style="background:rgba(0,0,0,0.1);"><span class="pat-ltr"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">C</font></font></span><span class="pat-name"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Taruka</font></font></span></div>
+      <div class="quad-pos"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Lower Left</font></font></div>
+      <div class="main-block">
+        <div class="color-num"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">#5</font></font></div>
+        <div class="color-meaning"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">(Summer)</font></font></div>
+      </div>
+      <div class="narrative" style="color:#2a3220; text-align:center;">
+        <span class="narrative-nums" style="color:#1a2012;"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">#9 · #1</font></font></span><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;"> — Taruka, Sisa, Inti: Kausay at its best
+      </font></font></div>
+    </div>
+
+  </div>
+  <div class="face-label bottom"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">B-SIDE — light side · dawn / day</font></font></div>
+
+  <!-- ── Color key ─────────────────────────────────────── -->
+  <div class="color-key">
+    <div class="key-title"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Reference — numbered samples from Pitumarca</font></font></div>
+    <div class="key-swatches">
+      <div class="key-item"><div class="key-dot" style="background:#c79714;"></div><span class="key-num"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">#1</font></font></span></div>
+      <div class="key-item"><div class="key-dot" style="background:#a76524;"></div><span class="key-num"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">#2</font></font></span></div>
+      <div class="key-item"><div class="key-dot" style="background:#ca5c44;"></div><span class="key-num"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">#3</font></font></span></div>
+      <div class="key-item"><div class="key-dot" style="background:#7a6030;"></div><span class="key-num"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">#4</font></font></span></div>
+      <div class="key-item"><div class="key-dot" style="background:#6a9e6a;"></div><span class="key-num"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">#5</font></font></span></div>
+      <div class="key-item"><div class="key-dot" style="background:#654c36;"></div><span class="key-num"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">#6</font></font></span></div>
+      <div class="key-item"><div class="key-dot" style="background:#979984;"></div><span class="key-num"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">#7</font></font></span></div>
+      <div class="key-item"><div class="key-dot" style="background:#54544e;"></div><span class="key-num"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">#8</font></font></span></div>
+      <div class="key-item"><div class="key-dot" style="background:#702f36;"></div><span class="key-num"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">#9</font></font></span></div>
+      <div class="key-item"><div class="key-dot" style="background:#584a59;"></div><span class="key-num"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">#10</font></font></span></div>
+      <div class="key-item"><div class="key-dot" style="background:#b08090;"></div><span class="key-num"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">#11</font></font></span></div>
+      <div class="key-item"><div class="key-dot" style="background:#7d94a9;"></div><span class="key-num"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">#12</font></font></span></div>
+      <div class="key-item"><div class="key-dot" style="background:#335a78;"></div><span class="key-num"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">#13</font></font></span></div>
+    </div>
+  </div>
+
+  <!-- ── Weaver note ────────────────────────────────────── -->
+  <div class="note">
+    <div class="note-title"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">Note for knitters</font></font></div>
+    <div class="note-text"><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">
+      The background color of each quadrant is the only firm guide. The secondary colors and narrative descriptions are </font></font><em><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">entirely optional suggestions</font></font></em><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;"> —the weaver is free to adapt, enrich, or replace any motif according to their judgment, their tradition, and what the material allows. </font></font><em><font dir="auto" style="vertical-align: inherit;"><font dir="auto" style="vertical-align: inherit;">What is in their hands is the art.</font></font></em>
+    </div>
+  </div>
+
+</div><div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate" style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: &#39;Google Sans&#39;, Arial, sans-serif;" data-id=""><div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd"><div class="VIpgJd-yAWNEb-hvhgNd-Ud7fr"><img src="./poncho-schema-final_files/24px.svg" width="24" height="24" alt=""><div class=" VIpgJd-yAWNEb-hvhgNd-IuizWc-i3jM8c " dir="ltr">Original text</div></div><div class="VIpgJd-yAWNEb-hvhgNd-k77Iif"><div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div></div><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr"><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr"><div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">Rate this translation</div><div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">Your feedback will be used to help improve Google Translate</div></div><div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Good translation" aria-label="Good translation" aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z"></path></svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z"></path></svg></span></button><button id="goog-gt-thumbDownButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Poor translation" aria-label="Poor translation" aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z"></path></svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z"></path></svg></span></button></div></div><div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><form id="goog-gt-votingForm" action="file://translate.googleapis.com/translate_voting?client=te_lib" method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl" id="goog-gt-votingInputSrcLang"><input type="text" name="tl" id="goog-gt-votingInputTrgLang"><input type="text" name="query" id="goog-gt-votingInputSrcText"><input type="text" name="gtrans" id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote"></form><iframe name="votingFrame" frameborder="0" src="./poncho-schema-final_files/saved_resource.html"></iframe></div></div></div>
+
+
+</body></html>
